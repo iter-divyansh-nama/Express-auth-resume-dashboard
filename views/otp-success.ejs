@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OTP Verified!</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+
+  <div class="card" style="text-align: center;">
+    <div class="success-animation">
+      <div class="checkmark">✅</div>
+    </div>
+    <h1 style="margin: 1rem 0 0.5rem; font-size: 1.75rem;">Verified!</h1>
+    <p class="subtitle" style="margin-bottom: 1.5rem;">
+      Welcome, <strong><%= name %></strong>! Your account is now active.
+    </p>
+    <p style="color: #636e72; font-size: 0.9rem; margin-bottom: 2rem;">
+      You can now login with your email and password.
+    </p>
+    <a href="/login" class="btn-primary" id="go-login-btn">
+      <span class="btn-text">Go to Login</span>
+      <span class="btn-icon">→</span>
+    </a>
+  </div>
+</body>
+</html>

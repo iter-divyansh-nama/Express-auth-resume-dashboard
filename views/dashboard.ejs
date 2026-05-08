@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard — Divyansh Nama</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body class="dashboard-body">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+<nav class="navbar" id="main-nav">
+    <div class="nav-brand"><i class="fas fa-rocket"></i> Divyansh Nama</div>
+    <div class="nav-links-desktop">
+      <a href="#about" class="nav-link-item">About</a>
+      <a href="#skills" class="nav-link-item">Skills</a>
+      <a href="#projects" class="nav-link-item">Projects</a>
+      <a href="#experience" class="nav-link-item">Experience</a>
+      <a href="#certifications" class="nav-link-item">Certifications</a>
+    </div>
+    <div class="nav-right">
+      <span class="nav-user"><i class="fas fa-user-circle"></i>
+        <%= user.name %>
+      </span>
+      <a href="/logout" class="nav-logout" id="logout-btn">Logout</a>
+    </div>
+  </nav>
+  <div class="dashboard-container portfolio-container">
+<section class="hero-section" id="about">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-greeting">Welcome back, <span class="highlight">
+              <%= user.name %>
+            </span> 🎉</div>
+          <h1 class="hero-name">DIVYANSH NAMA</h1>
+          <p class="hero-title">Software Engineer Trainee — Java Backend & Cloud</p>
+          <p class="hero-subtitle">Final-year B.Tech (IT) student with expertise in Cloud Computing, DevOps, and Java
+            Backend Development.</p>
+          <div class="hero-contact-row">
+            <a href="tel:+917023235440" class="hero-contact-chip"><i class="fas fa-phone"></i> +91 7023235440</a>
+            <a href="mailto:divyanshnama2026@gmail.com" class="hero-contact-chip"><i class="fas fa-envelope"></i>
+              divyanshnama2026@gmail.com</a>
+            <a href="https://linkedin.com/in/divyansh-nama-39576b256/" target="_blank" class="hero-contact-chip"><i
+                class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://github.com/" target="_blank" class="hero-contact-chip"><i class="fab fa-github"></i>
+              GitHub</a>
+            <span class="hero-contact-chip"><i class="fas fa-map-marker-alt"></i> Jaipur, Rajasthan</span>
+          </div>
+        </div>
+        <div class="hero-avatar">
+          <div class="avatar-ring">
+            <div class="avatar-initials">DN</div>
+          </div>
+          <span class="verified-badge"><i class="fas fa-check-circle"></i> Verified</span>
+        </div>
+      </div>
+    </section>
+<section class="portfolio-card objective-card animate-on-scroll">
+      <div class="card-icon-header">
+        <div class="icon-circle objective-icon"><i class="fas fa-bullseye"></i></div>
+        <h2>Career Objective</h2>
+      </div>
+      <p class="objective-text">
+        Final-year B.Tech (IT) student with expertise in <strong>Cloud Computing</strong>, <strong>DevOps</strong>, and
+        <strong>Java Backend Development</strong>.
+        Possess hands-on experience in building scalable backend systems using <strong>Spring Boot</strong> and
+        designing cloud-based solutions on <strong>AWS</strong> and <strong>Azure</strong>.
+        Currently working as a <strong>Software Engineer Trainee at Capgemini</strong>, seeking an opportunity to
+        leverage technical skills and certifications to contribute to impactful and scalable applications.
+      </p>
+    </section>
+<section class="portfolio-card animate-on-scroll">
+      <div class="card-icon-header">
+        <div class="icon-circle education-icon"><i class="fas fa-graduation-cap"></i></div>
+        <h2>Education</h2>
+      </div>
+      <div class="education-timeline">
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-content">
+            <div class="edu-degree">B.Tech. (Information Technology)</div>
+            <div class="edu-meta">
+              <span><i class="fas fa-university"></i> Rajasthan Technical University</span>
+              <span class="edu-score"><i class="fas fa-star"></i> CGPA: 8.64</span>
+              <span class="edu-year"><i class="fas fa-calendar"></i> 2022 – 2026</span>
+            </div>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-content">
+            <div class="edu-degree">Senior Secondary (XII)</div>
+            <div class="edu-meta">
+              <span><i class="fas fa-school"></i> RBSE</span>
+              <span class="edu-score"><i class="fas fa-star"></i> 90.40%</span>
+              <span class="edu-year"><i class="fas fa-calendar"></i> 2022</span>
+            </div>
+          </div>
+        </div>
+        <div class="edu-item">
+          <div class="edu-dot"></div>
+          <div class="edu-content">
+            <div class="edu-degree">Secondary (X)</div>
+            <div class="edu-meta">
+              <span><i class="fas fa-school"></i> RBSE</span>
+              <span class="edu-score"><i class="fas fa-star"></i> 91.33%</span>
+              <span class="edu-year"><i class="fas fa-calendar"></i> 2020</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<section class="portfolio-card animate-on-scroll" id="skills">
+      <div class="card-icon-header">
+        <div class="icon-circle skills-icon"><i class="fas fa-code"></i></div>
+        <h2>Skills</h2>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3><i class="fas fa-laptop-code"></i> Programming</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">C/C++</span>
+            <span class="skill-tag">Java</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-cloud"></i> Cloud Platforms</h3>
+          <div class="skill-tags">
+            <span class="skill-tag aws">AWS EC2</span>
+            <span class="skill-tag aws">RDS</span>
+            <span class="skill-tag aws">S3</span>
+            <span class="skill-tag aws">IAM</span>
+            <span class="skill-tag aws">VPC</span>
+            <span class="skill-tag aws">CloudWatch</span>
+            <span class="skill-tag aws">Lambda</span>
+            <span class="skill-tag aws">Route53</span>
+            <span class="skill-tag aws">API Gateway</span>
+            <span class="skill-tag azure">Microsoft Azure</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-server"></i> Backend Development</h3>
+          <div class="skill-tags">
+            <span class="skill-tag backend">Spring Boot</span>
+            <span class="skill-tag backend">Hibernate (JPA)</span>
+            <span class="skill-tag backend">Microservices</span>
+            <span class="skill-tag backend">REST APIs</span>
+            <span class="skill-tag backend">Spring Cloud</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-tools"></i> DevOps & Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag devops">Docker</span>
+            <span class="skill-tag devops">Jenkins</span>
+            <span class="skill-tag devops">Git</span>
+            <span class="skill-tag devops">GitHub</span>
+            <span class="skill-tag devops">Postman</span>
+            <span class="skill-tag devops">Eclipse</span>
+            <span class="skill-tag devops">Spring Initializer</span>
+          </div>
+        </div>
+        <div class="skill-category">
+          <h3><i class="fas fa-database"></i> OS & Database</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Windows</span>
+            <span class="skill-tag">Linux (Red Hat)</span>
+            <span class="skill-tag">MySQL</span>
+          </div>
+        </div>
+      </div>
+    </section>
+<section class="portfolio-card animate-on-scroll" id="projects">
+      <div class="card-icon-header">
+        <div class="icon-circle project-icon"><i class="fas fa-project-diagram"></i></div>
+        <h2>Projects</h2>
+      </div>
+      <div class="projects-list">
+        <div class="project-item">
+          <div class="project-header">
+            <h3>Learning Management System (LMS) – Backend</h3>
+            <span class="project-year">2026</span>
+          </div>
+          <ul class="project-details">
+            <li>Designed and developed a layered backend architecture (Controller, Service, Repository) with RESTful
+              APIs for user, course, and enrollment management (CRUD operations), including API design and data
+              validation.</li>
+            <li>Built and structured relational database schema with entities like User, Course, and Enrollment,
+              maintaining proper relationships, constraints, and role-based structure.</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-chip"><i class="fab fa-java"></i> Java</span>
+            <span class="tech-chip">Spring Boot</span>
+            <span class="tech-chip">Hibernate (JPA)</span>
+            <span class="tech-chip">MySQL</span>
+            <span class="tech-chip">REST APIs</span>
+            <span class="tech-chip">Postman</span>
+          </div>
+        </div>
+        <div class="project-item">
+          <div class="project-header">
+            <h3>Multi-Cloud Weather Tracking with Disaster Recovery</h3>
+            <span class="project-year">2025</span>
+          </div>
+          <ul class="project-details">
+            <li>Deployed a static frontend on AWS S3 (primary) and Azure Blob Storage with DNS-based failover using
+              Route 53.</li>
+            <li>Automated infrastructure provisioning and failover configuration with Terraform, ensuring
+              reproducibility and disaster recovery readiness.</li>
+          </ul>
+          <div class="project-tech">
+            <span class="tech-chip">AWS S3</span>
+            <span class="tech-chip">CloudFront</span>
+            <span class="tech-chip">Route 53</span>
+            <span class="tech-chip">Azure Blob</span>
+            <span class="tech-chip">Terraform</span>
+            <span class="tech-chip">HTML/CSS/JS</span>
+          </div>
+        </div>
+      </div>
+    </section>
+<section class="portfolio-card animate-on-scroll" id="experience">
+      <div class="card-icon-header">
+        <div class="icon-circle experience-icon"><i class="fas fa-briefcase"></i></div>
+        <h2>Experience</h2>
+      </div>
+      <div class="experience-list">
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-company-info">
+              <h3>Capgemini, India</h3>
+              <span class="exp-role">Software Engineer Trainee (Java Backend & Cloud)</span>
+            </div>
+            <span class="exp-duration">Jan 2026 – Present</span>
+          </div>
+          <ul class="exp-details">
+            <li>Completed foundational training and specialized in Java Backend Development using Core Java and Spring
+              Boot.</li>
+            <li>Developed and tested RESTful APIs using Spring Boot and Postman, with exposure to Microservices
+              architecture and backend system design.</li>
+            <li>Gained hands-on experience in cloud and DevOps fundamentals while working in an agile, team-based
+              environment.</li>
+          </ul>
+        </div>
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-company-info">
+              <h3>Koenig Solutions Pvt. Ltd.</h3>
+              <span class="exp-role">AWS Certified Solutions Architect – Professional Training <em>(via R-CAT
+                  Scholarship, Govt. of Rajasthan)</em></span>
+            </div>
+            <span class="exp-duration">Aug 2025</span>
+          </div>
+          <ul class="exp-details">
+            <li>Completed professional-level AWS cloud architecture training under Govt. of Rajasthan's R-CAT program.
+            </li>
+            <li>Designed and deployed scalable, secure, and cost-optimized cloud solutions on AWS.</li>
+            <li>Gained hands-on experience with advanced cloud automation and hybrid architectures.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+<section class="portfolio-card animate-on-scroll" id="certifications">
+      <div class="card-icon-header">
+        <div class="icon-circle cert-icon"><i class="fas fa-certificate"></i></div>
+        <h2>Certifications</h2>
+      </div>
+      <div class="cert-columns">
+        <div class="cert-group">
+          <h3><i class="fab fa-aws"></i> AWS & Azure Cloud</h3>
+          <div class="cert-list">
+            <div class="cert-item aws-cert">
+              <i class="fas fa-award"></i>
+              <span>AWS Certified Solutions Architect Associate</span>
+            </div>
+            <div class="cert-item aws-cert">
+              <i class="fas fa-award"></i>
+              <span>AWS Certified Cloud Practitioner</span>
+            </div>
+            <div class="cert-item aws-cert">
+              <i class="fas fa-award"></i>
+              <span>AWS Certified AI Practitioner</span>
+            </div>
+            <div class="cert-item azure-cert">
+              <i class="fas fa-award"></i>
+              <span>Azure Fundamentals (AZ-900)</span>
+            </div>
+            <div class="cert-item azure-cert">
+              <i class="fas fa-award"></i>
+              <span>Azure Administrator Associate (AZ-104)</span>
+            </div>
+            <div class="cert-item azure-cert">
+              <i class="fas fa-award"></i>
+              <span>Azure Solutions Architect Expert (AZ-305)</span>
+            </div>
+            <div class="cert-item azure-cert">
+              <i class="fas fa-award"></i>
+              <span>Azure DevOps Engineer Expert (AZ-400)</span>
+            </div>
+          </div>
+        </div>
+        <div class="cert-group">
+          <h3><i class="fas fa-shield-alt"></i> Other Certifications</h3>
+          <div class="cert-list">
+            <div class="cert-item other-cert">
+              <i class="fas fa-award"></i>
+              <span>Red Hat Certified System Administrator (RHCSA)</span>
+            </div>
+            <div class="cert-item other-cert">
+              <i class="fas fa-award"></i>
+              <span>Google Cloud Certified Associate Cloud Engineer</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+<section class="portfolio-card animate-on-scroll">
+      <div class="card-icon-header">
+        <div class="icon-circle achievement-icon"><i class="fas fa-trophy"></i></div>
+        <h2>Achievements</h2>
+      </div>
+      <div class="achievements-list">
+        <div class="achievement-item">
+          <div class="achievement-badge"><i class="fas fa-medal"></i></div>
+          <p><strong>2× R-CAT Scholar</strong>, Govt. of Rajasthan (DoIT&C), selected through state-level Quiz-A-Thon
+            under RKCL; also selected as the only candidate from college for a government-sponsored AWS Solutions
+            Architect Professional training and scholarship under R-CAT Centre.</p>
+        </div>
+        <div class="achievement-item">
+          <div class="achievement-badge"><i class="fas fa-code-branch"></i></div>
+          <p>Contributed in <strong>GSoC '24</strong> and participated in <strong>Smart India Hackathon (SIH) '23 &
+              '24</strong> at college level.</p>
+        </div>
+      </div>
+    </section>
+<section class="portfolio-card animate-on-scroll">
+      <div class="card-icon-header">
+        <div class="icon-circle account-icon"><i class="fas fa-user-shield"></i></div>
+        <h2>Account Details</h2>
+      </div>
+      <div class="account-stats-row">
+        <div class="account-stat-card">
+          <div class="account-stat-icon"><i class="fas fa-user"></i></div>
+          <div class="account-stat-info">
+            <div class="account-stat-value">
+              <%= user.name %>
+            </div>
+            <div class="account-stat-label">Your Name</div>
+          </div>
+        </div>
+        <div class="account-stat-card">
+          <div class="account-stat-icon"><i class="fas fa-envelope"></i></div>
+          <div class="account-stat-info">
+            <div class="account-stat-value">
+              <%= user.email %>
+            </div>
+            <div class="account-stat-label">Email Address</div>
+          </div>
+        </div>
+        <div class="account-stat-card">
+          <div class="account-stat-icon"><i class="fas fa-birthday-cake"></i></div>
+          <div class="account-stat-info">
+            <div class="account-stat-value">
+              <%= user.age %>
+            </div>
+            <div class="account-stat-label">Age</div>
+          </div>
+        </div>
+        <div class="account-stat-card">
+          <div class="account-stat-icon"><i class="fas fa-id-badge"></i></div>
+          <div class="account-stat-info">
+            <div class="account-stat-value" style="font-size: 0.7rem; word-break: break-all;">
+              <%= user._id %>
+            </div>
+            <div class="account-stat-label">MongoDB _id</div>
+          </div>
+        </div>
+      </div>
+      <div class="info-grid" style="margin-top: 1.5rem;">
+        <div class="info-item">
+          <span class="info-label">Account Created</span>
+          <span class="info-value">
+            <%= new Date(user.createdAt).toLocaleString() %>
+          </span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Verified Status</span>
+          <span class="info-value">
+            <%= user.isVerified ? '✅ Verified' : '❌ Not Verified' %>
+          </span>
+        </div>
+        <div class="info-item">
+          <span class="info-label">Token Expiry</span>
+          <span class="info-value">1 hour from login</span>
+        </div>
+      </div>
+    </section>
+
+<section class="portfolio-card animate-on-scroll">
+      <div class="card-icon-header">
+        <div class="icon-circle users-icon"><i class="fas fa-users"></i></div>
+        <h2>All Registered Users (<%= users.length %>)</h2>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Age</th>
+              <th>Verified</th>
+              <th>Joined</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% users.forEach((u, i)=> { %>
+              <tr class="<%= u._id.toString() === user._id.toString() ? 'current-user-row' : '' %>">
+                <td>
+                  <%= i + 1 %>
+                </td>
+                <td><strong>
+                    <%= u.name %>
+                  </strong></td>
+                <td>
+                  <%= u.email %>
+                </td>
+                <td>
+                  <%= u.age %>
+                </td>
+                <td>
+                  <% if (u.isVerified) { %>
+                    <span class="badge badge-green">✅ Yes</span>
+                    <% } else { %>
+                      <span class="badge badge-red">❌ No</span>
+                      <% } %>
+                </td>
+                <td>
+                  <%= new Date(u.createdAt).toLocaleDateString() %>
+                </td>
+              </tr>
+              <% }) %>
+          </tbody>
+        </table>
+      </div>
+    </section>
+<footer class="portfolio-footer">
+      <p>© 2026 Divyansh Nama. Built with <i class="fas fa-heart" style="color: #e74c3c;"></i> using Express.js & EJS
+      </p>
+    </footer>
+  </div>
+  <script>
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+    document.querySelectorAll('.animate-on-scroll').forEach(el => observer.observe(el));
+    // Smooth scroll for nav links
+    document.querySelectorAll('.nav-link-item').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    });
+    // Navbar shadow on scroll
+    window.addEventListener('scroll', () => {
+      const nav = document.getElementById('main-nav');
+      if (window.scrollY > 10) {
+        nav.classList.add('nav-scrolled');
+      } else {
+        nav.classList.remove('nav-scrolled');
+      }
+    });
+  </script>
+</body>
+</html>
